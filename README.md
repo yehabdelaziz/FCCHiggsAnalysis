@@ -8,7 +8,19 @@ An event selection is applied to choose events containing at least 4 leptons.
 The Higgs is reconstructed from the 4 leptons as follows:
 First pair of leptons (From On-shell Z)​:
 - Oppositely charged leptons
-- The pair which minimises |M<sub>ll</sub> - M<sub>Z</sub>|​.
+- The pair which minimises |M<sub>ll</sub> - M<sub>Z</sub>|​.<br>
 Second Pair of leptons (From off-shell Z)​:
 - Oppositely charged leptons​
-- Highest momentum pair of the remaining leptons​. 
+- Highest momentum pair of the remaining leptons​.<br>
+
+In final stage, analysis cuts are applied on the ROOT tree produced from stage1 and histgorams are created from the produced branches. 
+The histograms are then weighted according to each process's cross section and total integrated luminosity.
+The plot stage is where the signal and backgrounds are plotted. The background is stacked and the signal is overlayed above the background.
+To run the analysis, first source the [key4hep](https://github.com/key4hep/) stack.
+```
+source /cvmfs/sw.hsf.org/key4hep/setup.sh -r 2024-03-10
+```
+To run stage1, 
+```
+python3 analysis_stage1.py process_name number_of_events
+``` 
