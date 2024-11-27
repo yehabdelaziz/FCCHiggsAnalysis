@@ -1,3 +1,4 @@
+// This code belongs to FCC Analysis software https://github.com/HEP-FCC/FCCAnalyses
 #include "ReconstructedParticle.h"
 
 // std

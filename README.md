@@ -36,3 +36,12 @@ Then run:
 ```
 python3 analysis_final.py
 ```
+
+To run the plot stage, open the config_plots file and specify the list of histograms you want to plot, the list of signal and background
+processes and the plot legend and colors for each process. Then run:
+
+
+```
+python3 plotting_FCC.py
+```
+

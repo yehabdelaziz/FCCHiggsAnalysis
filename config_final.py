@@ -4,7 +4,7 @@ output_dir="final/"
 
 cut_condition=" fourMuons_pmin > 5 && pmiss < 20 && vis_e_other_particles > 95   && non_res_Z_m < 65   && non_res_Z_m > 10"
 
-Luminosity = 10800000
+Luminosity = 10800000 # in pb
 
 histoList = {
 "hist_fourMuons_mass":{"name":"fourMuons_mass","label":"M_{4#mu} [GeV]","bin":20,"xmin":120.0,"xmax":130.0},
